@@ -17,12 +17,28 @@ class CheckSecretKey
     public function handle(Request $request, Closure $next)
     {
         $key=$request->header('key');
+        $password=$request->header('password');
 
-        if($key=='burakkaynar'){
+/*
+         if($key=='aygulen12.' && $password=='burakkaynar'){
             return $next($request);
         }
         else{
-            return response()->json([],401);
+            return response()->json(['Lütfen Şifrenizi Kontrol Edin'],401);
+        }
+ */
+        if($key=='aygulen12.')
+        {
+            if ($password=='burakkaynar'){
+                return $next($request);
+            }
+            else
+            {
+                return  response()->json(['Şifrenizi Kontrol Ediniz'],401);
+            }
+        }
+        else{
+            return response()->json(['Şifrenizi Kontrol Ediniz'],401);
         }
     }
 }
