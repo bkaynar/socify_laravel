@@ -1,0 +1,1 @@
+[30-Jan-2024 11:28:01 Europe/Istanbul] PHP Fatal error:  Trait "App\Http\Controllers\Carbon\Carbon" not found in /home/shiningm/ahisocitify.shiningmoony.com.tr/app/Http/Controllers/YemekController.php on line 8
