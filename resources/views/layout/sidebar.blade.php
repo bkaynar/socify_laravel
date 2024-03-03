@@ -160,6 +160,22 @@
                     </ul>
                 </div>
             </li>
+            <li class="nav-item {{ active_class(['guncelleme/*']) }}">
+                <a class="nav-link" data-bs-toggle="collapse" href="#guncelleme" role="guncelleme"
+                   aria-expanded="{{ is_active_route(['guncelleme/*']) }}" aria-controls="email">
+                    <i class="link-icon" data-feather="user"></i>
+                    <span class="link-title">Güncelleme</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse {{ show_class(['guncelleme/*']) }}" id="guncelleme">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ url('/guncelleme') }}"
+                               class="nav-link {{ active_class(['guncelleme']) }}">Güncelleme</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('logout')}}">
                     <i class="link-icon" data-feather="log-out"></i>
