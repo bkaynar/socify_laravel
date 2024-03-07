@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TaksiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/TaksiModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2024_03_07_172737_create_taksi_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/guncelleme/guncelleme-ekle.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/guncelleme/guncelleme-guncelle.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/guncelleme/guncelleme.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/taksi/taksi-ekle.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/taksi/taksi.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckSecretKey.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckSecretKey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/GuncellemeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/GuncellemeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_03_132121_create_guncelleme_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_03_132121_create_guncelleme_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,13 +172,16 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2bx34xtobQjFsrkMyoDMNYcHpo6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
@@ -221,8 +238,21 @@
       <workItem from="1708946466445" duration="2516000" />
       <workItem from="1709210279758" duration="88000" />
       <workItem from="1709280656066" duration="619000" />
-      <workItem from="1709459516478" duration="2140000" />
+      <workItem from="1709459516478" duration="4668000" />
+      <workItem from="1709475297449" duration="1082000" />
+      <workItem from="1709477122135" duration="617000" />
+      <workItem from="1709821625798" duration="1220000" />
+      <workItem from="1709823600676" duration="2834000" />
     </task>
+    <task id="LOCAL-00001" summary="güncelleme eklendi">
+      <option name="closed" value="true" />
+      <created>1709463160110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709463160110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,5 +268,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="güncelleme eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="güncelleme eklendi" />
   </component>
 </project>

@@ -15,6 +15,9 @@ class GuncellemeModel extends Model
         'ios',
         'android_check',
         'ios_check',
+        'playstore_link',
+        'appstore_link',
+        'silindi',
         'created_at',
         'updated_at',
     ];

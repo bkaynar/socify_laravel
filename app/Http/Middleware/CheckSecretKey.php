@@ -18,15 +18,6 @@ class CheckSecretKey
     {
         $key=$request->header('key');
         $password=$request->header('password');
-
-/*
-         if($key=='aygulen12.' && $password=='burakkaynar'){
-            return $next($request);
-        }
-        else{
-            return response()->json(['Lütfen Şifrenizi Kontrol Edin'],401);
-        }
- */
         if($key=='aygulen12.')
         {
             if ($password=='burakkaynar'){
@@ -34,11 +25,11 @@ class CheckSecretKey
             }
             else
             {
-                return  response()->json(['Şifrenizi Kontrol Ediniz'],401);
+                return  response()->json(['message'=>'Token Geçerlilik Süresi Doldu','code'=>401]);
             }
         }
         else{
-            return response()->json(['Şifrenizi Kontrol Ediniz'],401);
+            return  response()->json(['message'=>'Token Geçerlilik Süresi Doldu','code'=>401]);
         }
     }
 }

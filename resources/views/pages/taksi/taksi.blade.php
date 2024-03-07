@@ -1,0 +1,183 @@
+@extends('layout.master')
+
+@section('content')
+    <nav class="page-breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Taksi</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Taksiler</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Taksiler</h6>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Adı</th>
+                                <th>Plaka</th>
+                                <th>Cep Numarası</th>
+                                <th>Öncelikli</th>
+                                <th>Aktif/Pasif</th>
+                                <th>Sil</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($taksiler as $taksi)
+                                <tr>
+                                    <!--web.php sayfasından gelen veriyi foreach ile göstereceğiz -->
+                                    <td>{{$taksi->id}}</td>
+                                    <td>{{$taksi->adi}}</td>
+                                    <td>{{$taksi->plaka}}</td>
+                                    <td>{{$taksi->telefon}}</td>
+                                    <td>
+                                        @if($taksi->oncelik == 1)
+                                            <button type="button" class="btn btn-success oncelik">Öncelikli</button>
+                                        @else
+                                            <button type="button" class="btn btn-danger oncelik">Öncelikli Değil
+                                            </button>
+                                        @endif
+
+                                        <!-- Burada yapılacak işlem şudur
+                                    aktif verisi 1 ise buton aktif olacak 0 ise pasif olacak ve basıldığında 1 ise 0, 0 ise 1 olacak
+                                    -->
+                                    <td>
+                                        @if($taksi->aktif == 1)
+                                            <button type="button" class="btn btn-success aktif">Aktif</button>
+                                        @else
+                                            <button type="button" class="btn btn-danger aktif">Pasif</button>
+                                    @endif
+                                    <td>
+                                        <button type="button" class="btn btn-danger sil">Sil</button>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+@push('custom-scripts')
+    <script>
+        //Silme işlemi için
+        $('.sil').click(function () {
+            //Sweet Alert ile silme işlemi
+            Swal.fire({
+                title: 'Emin misiniz?',
+                text: "Bu işlemi geri alamayacaksınız!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Sil',
+                cancelButtonText: 'İptal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    //Silme işlemi
+                    let id = $(this).closest('tr').find('td:first').text();
+                    let tr = $(this).closest('tr');
+                    $.ajax({
+                        //type Update olduğu için put
+                        type: "PUT",
+                        url: "/taksi-delete/" + id,
+                        data: {
+                            "_token": "{{ csrf_token() }}",
+                            "id": id
+                        },
+                        success: function (response) {
+                            tr.remove();
+                        }
+                    });
+                    Swal.fire(
+                        'Silindi!',
+                        'Silme işlemi başarıyla gerçekleşti.',
+                        'success'
+                    )
+                }
+            });
+        });
+
+        // Aktif/pasif butonlarını güncellemek için işlev tanımlama
+        function guncelleButon(tr, aktif) {
+            if (aktif == 1) {
+                tr.find('.aktif').removeClass('btn-danger').addClass('btn-success').text('Aktif');
+            } else {
+                tr.find('.aktif').removeClass('btn-success').addClass('btn-danger').text('Pasif');
+            }
+        }
+
+        $('.aktif').click(function () {
+            let id = $(this).closest('tr').find('td:first').text();
+            let tr = $(this).closest('tr');
+            $.ajax({
+                type: "PUT",
+                url: "/taksi-aktif/" + id,
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    "id": id
+                },
+                success: function (response) {
+                    guncelleButon(tr, response.aktif); // Butonun durumunu güncelle
+                    if (response.aktif == 1) {
+                        Swal.fire(
+                            'Aktif!',
+                            'Taksi başarıyla aktif edildi.',
+                            'success'
+                        )
+                    } else {
+                        Swal.fire(
+                            'Pasif!',
+                            'Taksi başarıyla pasif edildi.',
+                            'error'
+                        )
+                    }
+                }
+            });
+        });
+
+        function oncelikliButon(tr, oncelik) {
+            if (oncelik == 1) {
+                tr.find('.oncelik').removeClass('btn-danger').addClass('btn-success').text('Öncelikli');
+            } else {
+                tr.find('.oncelik').removeClass('btn-success').addClass('btn-danger').text('Öncelikli Değil');
+            }
+        }
+
+        $('.oncelik').click(function () {
+            let id = $(this).closest('tr').find('td:first').text();
+            let tr = $(this).closest('tr');
+            $.ajax({
+                type: "PUT",
+                url: "/taksi-oncelik/" + id,
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    "id": id
+                },
+                success: function (response) {
+                    oncelikliButon(tr, response.oncelik); // Butonun durumunu güncelle
+                    if (response.oncelik == 1) {
+                        Swal.fire(
+                            'Öncelikli!',
+                            'Taksi başarıyla öncelikli yapıldı.',
+                            'success'
+                        )
+                    } else {
+                        Swal.fire(
+
+                            'Öncelikli Değil!',
+                            'Taksinin öncelikliği kaldırıldı.',
+                            'error'
+                        )
+                    }
+                }
+            });
+        });
+    </script>
+@endpush

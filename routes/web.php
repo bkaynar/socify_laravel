@@ -16,9 +16,11 @@ use App\Http\Controllers\BirimController;
 use App\Http\Controllers\DuyuruController;
 use App\Http\Controllers\EkipController;
 use App\Http\Controllers\EtkinlikController;
+use App\Http\Controllers\GuncellemeController;
 use App\Http\Controllers\KaliteBildirimController;
 use App\Http\Controllers\KaliteGondericiController;
 use App\Http\Controllers\OtobusSaatleriController;
+use App\Http\Controllers\TaksiController;
 use App\Http\Controllers\ToplulukController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\YemekController;
@@ -142,7 +144,17 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         return view('pages.kalite.kalitegondericiekle');
     });
 
-//Kalite
+//Guncelleme
+    Route::get('guncelleme', [GuncellemeController::class, 'index'])->name('guncelleme');
+    Route::get('guncelleme-ekle', function () {
+        return view('pages.guncelleme.guncelleme-ekle');
+    });
+
+//Taksi
+    Route::get('taksi', [TaksiController::class, 'index'])->name('taksi');
+    Route::get('taksi-ekle', function () {
+        return view('pages.taksi.taksi-ekle');
+    });
 
 
 //Ekleme İşlemleri
@@ -156,6 +168,8 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::post('kalitegonderici-ekle', [KaliteGondericiController::class, 'store'])->name('kalitegonderici-ekle');
     Route::post('kullanici-ekle', [UserController::class, 'store'])->name('kullanici-ekle');
     Route::post('ekip-ekle', [EkipController::class, 'store'])->name('ekip-ekle');
+    Route::post('guncelleme-ekle', [GuncellemeController::class, 'store'])->name('guncelleme-ekle');
+    Route::post('taksi-ekle', [TaksiController::class, 'store'])->name('taksi-ekle');
 
 
 //Silme İşlemleri
@@ -168,7 +182,12 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::put('kalitebildirim-delete/{id}', [KaliteBildirimController::class, 'destroy'])->name('kalitebildirim-delete');
     Route::put('kullanici-delete/{id}', [UserController::class, 'destroy'])->name('kullanici-delete');
     Route::put('ekip-delete/{id}', [EkipController::class, 'destroy'])->name('ekip-delete');
+    Route::put('guncelleme-delete/{id}', [GuncellemeController::class, 'destroy'])->name('guncelleme-delete');
+    Route::put('taksi-delete/{id}', [TaksiController::class, 'destroy'])->name('taksi-delete');
 
+//Düzenleme İşlemleri
+    Route::put('taksi-aktif/{id}', [TaksiController::class, 'aktiflik'])->name('taksi-aktif');
+    Route::put('taksi-oncelik/{id}', [TaksiController::class, 'oncelikver'])->name('taksi-oncelik');
 
     Route::group(['prefix' => 'error'], function () {
         Route::get('404', function () {

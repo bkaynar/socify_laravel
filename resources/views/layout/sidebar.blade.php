@@ -173,6 +173,30 @@
                             <a href="{{ url('/guncelleme') }}"
                                class="nav-link {{ active_class(['guncelleme']) }}">Güncelleme</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/guncelleme-ekle') }}"
+                               class="nav-link {{ active_class(['guncelleme-ekle']) }}">Güncelleme Ekle</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item {{ active_class(['taksi/*']) }}">
+                <a class="nav-link" data-bs-toggle="collapse" href="#taksi" role="taksi"
+                   aria-expanded="{{ is_active_route(['taksi/*']) }}" aria-controls="email">
+                    <i class="link-icon" data-feather=""></i>
+                    <span class="link-title">Taksi</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse {{ show_class(['taksi/*']) }}" id="taksi">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ url('/taksi') }}"
+                               class="nav-link {{ active_class(['taksi']) }}">Taksi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/taksi-ekle') }}"
+                               class="nav-link {{ active_class(['taksi-ekle']) }}">Taksi Ekle</a>
+                        </li>
                     </ul>
                 </div>
             </li>

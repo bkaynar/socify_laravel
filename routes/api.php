@@ -47,3 +47,7 @@ Route::get('/eczane-listele', 'EczaneController@listele');
 Route::get('/okul-etkinlik', 'OkulEtkinlikController@okuletkinlik')->middleware('CheckSecretKey');
 
 Route::get('/ekip-goruntule','EkipController@listele')->middleware('CheckSecretKey');
+
+Route::get('/guncelleme', 'GuncellemeController@guncelleme')->middleware('CheckSecretKey');
+
+Route::get('/taksi-listele', 'TaksiController@goster')->middleware('CheckSecretKey');
