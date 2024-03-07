@@ -180,7 +180,7 @@
                     if (response.oncelik == 1) {
                         Swal.fire(
                             'Öncelikli!',
-                            'Taksi başarıyla öncelikli yapıldı.',
+                            'Taksiye başarıyla öncelik verildi.',
                             'success'
                         )
                     } else {
