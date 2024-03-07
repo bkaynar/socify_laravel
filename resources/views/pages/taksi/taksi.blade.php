@@ -66,6 +66,20 @@
 @endsection
 @push('custom-scripts')
     <script>
+        function siralama() {
+            var table = $("table tbody");
+            table.find('tr').sort(function(a, b) {
+                var keyA = $(a).find('.oncelik').hasClass('btn-success');
+                var keyB = $(b).find('.oncelik').hasClass('btn-success');
+                return (keyA === keyB) ? 0 : keyA ? -1 : 1;
+            }).appendTo(table);
+        }
+
+        // Sayfa yüklendiğinde ve herhangi bir güncelleme işleminden sonra tabloyu yeniden sıralamak için çağrı yapın
+        $(document).ready(function() {
+            siralama();
+        });
+
         //Silme işlemi için
         $('.sil').click(function () {
             //Sweet Alert ile silme işlemi
@@ -151,6 +165,7 @@
         }
 
         $('.oncelik').click(function () {
+            siralama();
             let id = $(this).closest('tr').find('td:first').text();
             let tr = $(this).closest('tr');
             $.ajax({
@@ -176,8 +191,10 @@
                             'error'
                         )
                     }
+                    siralama();
                 }
             });
+            siralama();
         });
     </script>
 @endpush
