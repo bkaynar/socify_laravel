@@ -27,6 +27,11 @@
                             <div class="col-sm-9">
                                 <input type="text" name="ios" class="form-control">
                             </div>
+                        </div><div class="row mb-3">
+                            <label for="saat" class="col-sm-3 col-form-label">Mesaj</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="aciklama" class="form-control">
+                            </div>
                         </div>
                         <div class="row mb-3">
                             <label for="saat" class="col-sm-3 col-form-label">Android Link</label>

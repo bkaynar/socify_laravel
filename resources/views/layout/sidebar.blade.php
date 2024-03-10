@@ -199,6 +199,25 @@
                         </li>
                     </ul>
                 </div>
+            </li> <li class="nav-item {{ active_class(['story/*']) }}">
+                <a class="nav-link" data-bs-toggle="collapse" href="#story" role="story"
+                   aria-expanded="{{ is_active_route(['story/*']) }}" aria-controls="email">
+                    <i class="link-icon" data-feather=""></i>
+                    <span class="link-title">Story</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse {{ show_class(['story/*']) }}" id="story">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ url('/story') }}"
+                               class="nav-link {{ active_class(['story']) }}">Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/story-ekle') }}"
+                               class="nav-link {{ active_class(['story-ekle']) }}">Story Ekle</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('logout')}}">

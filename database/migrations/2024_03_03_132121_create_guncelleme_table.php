@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text('android')->nullable();
             $table->text('ios')->nullable();
+            $table->text('aciklama')->nullable();
             $table->boolean('android_check')->default(1);
             $table->boolean('ios_check')->default(1);
             $table->text('playstore_link')->nullable();//nullable boş geçilebilir demek

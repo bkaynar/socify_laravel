@@ -12,14 +12,14 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('taksi', function (Blueprint $table) {
+        Schema::create('story', function (Blueprint $table) {
             $table->id();
-            $table->string('adi')->nullable();
-            $table->string('plaka')->nullable();
-            $table->string('telefon')->nullable();
+            $table->string('title')->nullable();
+            $table->string('ana_foto')->nullable();
+            $table->string('fotograf')->nullable();
+            $table->boolean('oncelik')->default(0);
             $table->boolean('aktif')->default(1);
             $table->boolean('silindi')->default(0);
-            $table->boolean('oncelik')->default(0);
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('taksi');
+        Schema::dropIfExists('story');
     }
 };

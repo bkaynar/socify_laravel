@@ -23,6 +23,7 @@ class BirimController extends Controller
         $birimler->save();
     }
 
+
     //
     public function destroy($id)
     {

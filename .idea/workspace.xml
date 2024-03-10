@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="taksi eklendi">
+    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="taksi önceliğe göre dizildi v2">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/StoryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/YurtYemekModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2024_03_08_113442_create_story_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2024_03_08_113827_create_yurt_yemek_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/story/story-ekle.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/story/story.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2024-03-08.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/taksi/taksi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/taksi/taksi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BirimController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BirimController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaksiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaksiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_03_132121_create_guncelleme_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_03_132121_create_guncelleme_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_07_172737_create_taksi_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_07_172737_create_taksi_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/guncelleme/guncelleme-ekle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/guncelleme/guncelleme-ekle.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +174,30 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/beste/clock" />
+      <path value="$PROJECT_DIR$/vendor/rize/uri-template" />
+      <path value="$PROJECT_DIR$/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/vendor/beste/json" />
+      <path value="$PROJECT_DIR$/vendor/kreait/laravel-firebase" />
+      <path value="$PROJECT_DIR$/vendor/google/common-protos" />
+      <path value="$PROJECT_DIR$/vendor/kreait/firebase-tokens" />
+      <path value="$PROJECT_DIR$/vendor/kreait/firebase-php" />
+      <path value="$PROJECT_DIR$/vendor/google/gax" />
+      <path value="$PROJECT_DIR$/vendor/google/cloud-storage" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/google/longrunning" />
+      <path value="$PROJECT_DIR$/vendor/google/cloud-core" />
+      <path value="$PROJECT_DIR$/vendor/grpc/grpc" />
+      <path value="$PROJECT_DIR$/vendor/google/grpc-gcp" />
+      <path value="$PROJECT_DIR$/vendor/google/protobuf" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -228,7 +274,16 @@
       <workItem from="1709475297449" duration="1082000" />
       <workItem from="1709477122135" duration="617000" />
       <workItem from="1709821625798" duration="1220000" />
-      <workItem from="1709823600676" duration="3031000" />
+      <workItem from="1709823600676" duration="3904000" />
+      <workItem from="1709834649035" duration="1611000" />
+      <workItem from="1709880786924" duration="115000" />
+      <workItem from="1709880911683" duration="2279000" />
+      <workItem from="1709887661145" duration="2276000" />
+      <workItem from="1709894113171" duration="323000" />
+      <workItem from="1709903441761" duration="618000" />
+      <workItem from="1709914210715" duration="860000" />
+      <workItem from="1709918044052" duration="3697000" />
+      <workItem from="1709984172495" duration="2640000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme eklendi">
       <option name="closed" value="true" />
@@ -246,7 +301,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709826479236</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="taksi önceliğe göre dizildi">
+      <option name="closed" value="true" />
+      <created>1709826644716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709826644716</updated>
+    </task>
+    <task id="LOCAL-00004" summary="taksi önceliğe göre dizildi v2">
+      <option name="closed" value="true" />
+      <created>1709826967387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709826967387</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +338,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="güncelleme eklendi" />
     <MESSAGE value="taksi eklendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="taksi eklendi" />
+    <MESSAGE value="taksi önceliğe göre dizildi" />
+    <MESSAGE value="taksi önceliğe göre dizildi v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="taksi önceliğe göre dizildi v2" />
   </component>
 </project>

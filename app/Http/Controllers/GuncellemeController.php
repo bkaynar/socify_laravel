@@ -12,7 +12,7 @@ class GuncellemeController extends Controller
     public function guncelleme()
     {
         //silindi 0 olanları getir ve sadece android,android_check,playstore_link, kolonlarını getir
-        $guncellemeler = GuncellemeModel::orderBy('id', 'DESC')->where('silindi', 0)->get(['android', 'android_check', 'playstore_link']);
+        $guncellemeler = GuncellemeModel::orderBy('id', 'DESC')->where('silindi', 0)->get(['android', 'aciklama','android_check', 'playstore_link']);
         return response()->json($guncellemeler);
     }
 
@@ -27,6 +27,7 @@ class GuncellemeController extends Controller
         $guncelleme = new GuncellemeModel();
         $guncelleme->android = $request->android;
         $guncelleme->ios = $request->ios;
+        $guncelleme->aciklama = $request->aciklama;
         $guncelleme->android_check = 1;
         $guncelleme->ios_check = 1;
         $guncelleme->playstore_link = $request->playstore_link;

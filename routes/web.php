@@ -20,6 +20,7 @@ use App\Http\Controllers\GuncellemeController;
 use App\Http\Controllers\KaliteBildirimController;
 use App\Http\Controllers\KaliteGondericiController;
 use App\Http\Controllers\OtobusSaatleriController;
+use App\Http\Controllers\StoryController;
 use App\Http\Controllers\TaksiController;
 use App\Http\Controllers\ToplulukController;
 use App\Http\Controllers\UserController;
@@ -155,6 +156,11 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('taksi-ekle', function () {
         return view('pages.taksi.taksi-ekle');
     });
+//Story
+    Route::get('story', [StoryController::class, 'index'])->name('story');
+    Route::get('story-ekle', function () {
+        return view('pages.story.story-ekle');
+    });
 
 
 //Ekleme İşlemleri
@@ -170,6 +176,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::post('ekip-ekle', [EkipController::class, 'store'])->name('ekip-ekle');
     Route::post('guncelleme-ekle', [GuncellemeController::class, 'store'])->name('guncelleme-ekle');
     Route::post('taksi-ekle', [TaksiController::class, 'store'])->name('taksi-ekle');
+    Route::post('story-ekle', [StoryController::class, 'store'])->name('story-ekle');
 
 
 //Silme İşlemleri
@@ -184,10 +191,13 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::put('ekip-delete/{id}', [EkipController::class, 'destroy'])->name('ekip-delete');
     Route::put('guncelleme-delete/{id}', [GuncellemeController::class, 'destroy'])->name('guncelleme-delete');
     Route::put('taksi-delete/{id}', [TaksiController::class, 'destroy'])->name('taksi-delete');
+    Route::put('story-delete/{id}', [StoryController::class, 'destroy'])->name('story-delete');
 
 //Düzenleme İşlemleri
     Route::put('taksi-aktif/{id}', [TaksiController::class, 'aktiflik'])->name('taksi-aktif');
     Route::put('taksi-oncelik/{id}', [TaksiController::class, 'oncelikver'])->name('taksi-oncelik');
+    Route::put('story-aktif/{id}', [StoryController::class, 'aktiflik'])->name('story-aktif');
+    Route::put('story-oncelik/{id}', [StoryController::class, 'oncelikver'])->name('story-oncelik');
 
     Route::group(['prefix' => 'error'], function () {
         Route::get('404', function () {

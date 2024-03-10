@@ -51,3 +51,8 @@ Route::get('/ekip-goruntule','EkipController@listele')->middleware('CheckSecretK
 Route::get('/guncelleme', 'GuncellemeController@guncelleme')->middleware('CheckSecretKey');
 
 Route::get('/taksi-listele', 'TaksiController@goster')->middleware('CheckSecretKey');
+
+Route::get('/story-listele', 'StoryController@listele')->middleware('CheckSecretKey');
+
+//middleware olmadan ekleme işlemi
+Route::post('/taksi-ekle', 'TaksiController@ekle');
