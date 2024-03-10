@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="yemek düzenlendi">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemek.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemekekle.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/YurtYemekModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/YurtYemekModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_08_113827_create_yurt_yemek_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_08_113827_create_yurt_yemek_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemek.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemek.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -270,6 +266,7 @@
       <workItem from="1709918044052" duration="3697000" />
       <workItem from="1709984172495" duration="2640000" />
       <workItem from="1710051927637" duration="3884000" />
+      <workItem from="1710063366957" duration="791000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme eklendi">
       <option name="closed" value="true" />

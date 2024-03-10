@@ -199,7 +199,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::put('guncelleme-delete/{id}', [GuncellemeController::class, 'destroy'])->name('guncelleme-delete');
     Route::put('taksi-delete/{id}', [TaksiController::class, 'destroy'])->name('taksi-delete');
     Route::put('story-delete/{id}', [StoryController::class, 'destroy'])->name('story-delete');
-    Route::put('yurt-yemek-delete/{id}', [StoryController::class, 'destroy'])->name('yurt-yemek-delete');
+    Route::put('yurt-yemek-delete/{id}', [YurtYemekController::class, 'destroy'])->name('yurt-yemek-delete');
 
 //Düzenleme İşlemleri
     Route::put('taksi-aktif/{id}', [TaksiController::class, 'aktiflik'])->name('taksi-aktif');

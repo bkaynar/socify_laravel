@@ -81,7 +81,7 @@
                     $.ajax({
                         //type Update olduğu için put
                         type: "PUT",
-                        url: "/yemek-delete/" + id,
+                        url: "/yurt-yemek-delete/" + id,
                         data: {
                             "_token": "{{ csrf_token() }}",
                             "id": id

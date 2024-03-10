@@ -56,4 +56,8 @@ Route::get('/story-listele', 'StoryController@listele')->middleware('CheckSecret
 
 Route::get('/yurt-sabah-yemek', 'YurtYemekController@sabahlistele')->middleware('CheckSecretKey');
 
+Route::get('yurt-bugun-sabah-yemek','YurtYemekController@bugunkahvalti')->middleware('CheckSecretKey');
+
+Route::get('/yurt-bugun-aksam-yemek', 'YurtYemekController@bugunaksam')->middleware('CheckSecretKey');
+
 Route::get('/yurt-aksam-yemek', 'YurtYemekController@aksamlistele')->middleware('CheckSecretKey');
