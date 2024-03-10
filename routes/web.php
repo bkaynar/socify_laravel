@@ -25,6 +25,7 @@ use App\Http\Controllers\TaksiController;
 use App\Http\Controllers\ToplulukController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\YemekController;
+use App\Http\Controllers\YurtYemekController;
 use Illuminate\Support\Facades\Auth;
 
 //users tablosuna kayıt ekleme
@@ -161,6 +162,11 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('story-ekle', function () {
         return view('pages.story.story-ekle');
     });
+// Yurt Yemekleri
+    Route::get('yurt-yemek', [YurtYemekController::class, 'index'])->name('yurt-yemek');
+    Route::get('yurt-yemek-ekle', function () {
+        return view('pages.yurtyemek.yurtyemekekle');
+    });
 
 
 //Ekleme İşlemleri
@@ -177,6 +183,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::post('guncelleme-ekle', [GuncellemeController::class, 'store'])->name('guncelleme-ekle');
     Route::post('taksi-ekle', [TaksiController::class, 'store'])->name('taksi-ekle');
     Route::post('story-ekle', [StoryController::class, 'store'])->name('story-ekle');
+    Route::post('yurt-yemek-ekle', [YurtYemekController::class, 'store'])->name('yurt-yemek-ekle');
 
 
 //Silme İşlemleri
@@ -192,6 +199,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::put('guncelleme-delete/{id}', [GuncellemeController::class, 'destroy'])->name('guncelleme-delete');
     Route::put('taksi-delete/{id}', [TaksiController::class, 'destroy'])->name('taksi-delete');
     Route::put('story-delete/{id}', [StoryController::class, 'destroy'])->name('story-delete');
+    Route::put('yurt-yemek-delete/{id}', [StoryController::class, 'destroy'])->name('yurt-yemek-delete');
 
 //Düzenleme İşlemleri
     Route::put('taksi-aktif/{id}', [TaksiController::class, 'aktiflik'])->name('taksi-aktif');

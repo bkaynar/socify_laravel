@@ -15,15 +15,14 @@ return new class extends Migration {
         Schema::create('yurt_yemek', function (Blueprint $table) {
             $table->id();
             $table->string('corba');
-            $table->string('2.yemek');
-            $table->string('2.yemek_alternatif');
-            $table->string('3.yemek');
-            $table->string('4.yemek');
-            $table->string('diger_yiyecekler')->nullable();
+            $table->string('ikinci');
+            $table->string('ikincialternatif');
+            $table->string('ucuncu');
+            $table->string('dorduncu');
+            $table->string('digeryiyecekler')->nullable();
             $table->date('tarih');
-            $table->boolean('sabah-aksam');//0 sabah 1 aksam
+            $table->boolean('sabah_aksam');//0 sabah 1 aksam
             $table->boolean('silindi_mi')->default('0');
-
             $table->timestamps();
         });
     }

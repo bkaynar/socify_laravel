@@ -38,6 +38,27 @@
                     </ul>
                 </div>
             </li>
+            <li class="nav-item {{ active_class(['yurtyemek/*']) }}">
+                <a class="nav-link" data-bs-toggle="collapse" href="#yurtyemek" role="button"
+                   aria-expanded="{{ is_active_route(['yurtyemek/*']) }}" aria-controls="email">
+                    <i class="link-icon" data-feather="coffee"></i>
+                    <span class="link-title">Yurt Yemekleri</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse {{ show_class(['yurt-yemek/*']) }}" id="yurtyemek">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ url('/yurt-yemek') }}"
+                               class="nav-link {{ active_class(['yurt-yemek']) }}">Yurt Yemekler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/yurt-yemek-ekle') }}" class="nav-link {{ active_class(['yurt-yemek-ekle']) }}">Yemek
+                                Ekle</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
             <li class="nav-item {{ active_class(['otobus/*']) }}">
                 <a class="nav-link" data-bs-toggle="collapse" href="#otobus" role="button"
                    aria-expanded="{{ is_active_route(['otobus/*']) }}" aria-controls="email">
@@ -199,7 +220,8 @@
                         </li>
                     </ul>
                 </div>
-            </li> <li class="nav-item {{ active_class(['story/*']) }}">
+            </li>
+            <li class="nav-item {{ active_class(['story/*']) }}">
                 <a class="nav-link" data-bs-toggle="collapse" href="#story" role="story"
                    aria-expanded="{{ is_active_route(['story/*']) }}" aria-controls="email">
                     <i class="link-icon" data-feather=""></i>
