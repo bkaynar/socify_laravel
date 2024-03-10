@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="taksi önceliğe göre dizildi v2">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/StoryModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/YurtYemekModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2024_03_08_113442_create_story_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2024_03_08_113827_create_yurt_yemek_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/story/story-ekle.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/story/story.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2024-03-08.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BirimController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BirimController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaksiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaksiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_03_132121_create_guncelleme_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_03_132121_create_guncelleme_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_07_172737_create_taksi_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_07_172737_create_taksi_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/guncelleme/guncelleme-ekle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/guncelleme/guncelleme-ekle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_08_113827_create_yurt_yemek_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_08_113827_create_yurt_yemek_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,6 +262,7 @@
       <workItem from="1709914210715" duration="860000" />
       <workItem from="1709918044052" duration="3697000" />
       <workItem from="1709984172495" duration="2640000" />
+      <workItem from="1710051927637" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme eklendi">
       <option name="closed" value="true" />
@@ -317,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709826967387</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="taksi önceliğe göre dizildi v2">
+      <option name="closed" value="true" />
+      <created>1710051943686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710051943686</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
