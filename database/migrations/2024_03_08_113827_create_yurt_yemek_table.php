@@ -4,7 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      *
@@ -20,8 +21,8 @@ return new class extends Migration {
             $table->string('ucuncu');
             $table->string('dorduncu');
             $table->string('digeryiyecekler')->nullable();
-            $table->date('tarih');
             $table->boolean('sabah_aksam');//0 sabah 1 aksam
+            $table->date('tarih');
             $table->boolean('silindi_mi')->default('0');
             $table->timestamps();
         });

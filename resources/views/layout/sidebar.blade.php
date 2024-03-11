@@ -58,7 +58,6 @@
                     </ul>
                 </div>
             </li>
-
             <li class="nav-item {{ active_class(['otobus/*']) }}">
                 <a class="nav-link" data-bs-toggle="collapse" href="#otobus" role="button"
                    aria-expanded="{{ is_active_route(['otobus/*']) }}" aria-controls="email">
@@ -220,8 +219,7 @@
                         </li>
                     </ul>
                 </div>
-            </li>
-            <li class="nav-item {{ active_class(['story/*']) }}">
+            </li> <li class="nav-item {{ active_class(['story/*']) }}">
                 <a class="nav-link" data-bs-toggle="collapse" href="#story" role="story"
                    aria-expanded="{{ is_active_route(['story/*']) }}" aria-controls="email">
                     <i class="link-icon" data-feather=""></i>

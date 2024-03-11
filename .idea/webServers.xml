@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="94095268-ef93-41b9-8811-8d2cea09d6fd" name="11" url="http://ftp.shiningmoony.com.tr">
+      <webServer id="853f6245-e237-4315-bafd-c41acb29573f" name="ftp" url="http://ftp.shiningmoony.com.tr">
         <fileTransfer host="ftp.shiningmoony.com.tr" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />

@@ -50,18 +50,18 @@ class YurtYemekController extends Controller
         //response ile veri döndereceğiz çünkü ajax ile çalışıyoruz sweatalert ile mesaj göstermek için
         return response()->json(['success' => 'Başarıyla Silindi']);
     }
-public function bugunkahvalti()
-{
-    //bugüne ait olan verileri silindi 0 olaranları sabah_aksam alanı 0 olanı çekiyoruz ve sadece corba,ikinci,ikincialternatif,ucuncu,dorduncu,digeryiyecekler çekiyoruz
-    $yurtyemekler = YurtYemekModel::where('silindi_mi', 0)->where('tarih', date('Y-m-d'))->where('sabah_aksam', 0)->get(['corba', 'ikinci', 'ikincialternatif', 'ucuncu', 'dorduncu', 'digeryiyecekler']);
-    return response()->json($yurtyemekler);
-}
+    public function bugunkahvalti()
+    {
+        //bugüne ait olan verileri silindi 0 olaranları sabah_aksam alanı 0 olanı çekiyoruz ve sadece corba,ikinci,ikincialternatif,ucuncu,dorduncu,digeryiyecekler çekiyoruz
+        $yurtyemekler = YurtYemekModel::where('silindi_mi', 0)->where('tarih', date('Y-m-d'))->where('sabah_aksam', 0)->get(['corba', 'ikinci', 'ikincialternatif', 'ucuncu', 'dorduncu', 'digeryiyecekler']);
+        return response()->json($yurtyemekler);
+    }
 
-public function bugunaksam(){
-    //bugüne ait olan verileri silindi 0 olaranları sabah_aksam alanı 1 olanı çekiyoruz ve sadece corba,ikinci,ikincialternatif,ucuncu,dorduncu,digeryiyecekler çekiyoruz
-    $yurtyemekler = YurtYemekModel::where('silindi_mi', 0)->where('tarih', date('Y-m-d'))->where('sabah_aksam', 1)->get(['corba', 'ikinci', 'ikincialternatif', 'ucuncu', 'dorduncu', 'digeryiyecekler']);
-    return response()->json($yurtyemekler);
-}
+    public function bugunaksam(){
+        //bugüne ait olan verileri silindi 0 olaranları sabah_aksam alanı 1 olanı çekiyoruz ve sadece corba,ikinci,ikincialternatif,ucuncu,dorduncu,digeryiyecekler çekiyoruz
+        $yurtyemekler = YurtYemekModel::where('silindi_mi', 0)->where('tarih', date('Y-m-d'))->where('sabah_aksam', 1)->get(['corba', 'ikinci', 'ikincialternatif', 'ucuncu', 'dorduncu', 'digeryiyecekler']);
+        return response()->json($yurtyemekler);
+    }
     public function sabahlistele()
     {
         //verileri silindi 0 olanları çekiyoruz, sabah_aksam alanı 0 olanı , tarih bugün ve bugünden sonraki tarihler olacak şekilde çekiyoruz sadece yemek1,yemek2,yemek3,yemek4 ve tarih verilerini çekiyoruz

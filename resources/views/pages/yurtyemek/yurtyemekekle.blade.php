@@ -66,13 +66,13 @@
                                 <input type="radio" name="sabah_aksam" value="1" class="form-check-input">Akşam
                             </div>
 
-                        <div class="row mb-3">
-                            <label for="saat" class="col-sm-3 col-form-label">Tarih</label>
-                            <div class="col-sm-9">
-                                <input type="date" name="tarih" class="form-control">
+                            <div class="row mb-3">
+                                <label for="saat" class="col-sm-3 col-form-label">Tarih</label>
+                                <div class="col-sm-9">
+                                    <input type="date" name="tarih" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary me-2">Yemek Ekle</button>
+                            <button type="submit" class="btn btn-primary me-2">Yemek Ekle</button>
                     </form>
 
                 </div>

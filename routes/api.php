@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ZiyaretciController;
 use Illuminate\Http\Request;
 
 /*
@@ -61,3 +62,5 @@ Route::get('yurt-bugun-sabah-yemek','YurtYemekController@bugunkahvalti')->middle
 Route::get('/yurt-bugun-aksam-yemek', 'YurtYemekController@bugunaksam')->middleware('CheckSecretKey');
 
 Route::get('/yurt-aksam-yemek', 'YurtYemekController@aksamlistele')->middleware('CheckSecretKey');
+
+Route::get('/gunluk-ziyaretci-sayisi', 'ZiyaretciController@index')->middleware('CheckSecretKey');
