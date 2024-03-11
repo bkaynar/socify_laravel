@@ -80,6 +80,14 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/home', function () {
         return view('dashboard');
     });
+    Route::group(['prefix' => 'charts'], function(){
+        Route::get('apex', function () { return view('pages.charts.apex'); });
+        Route::get('chartjs', function () { return view('pages.charts.chartjs'); });
+        Route::get('flot', function () { return view('pages.charts.flot'); });
+        Route::get('peity', function () { return view('pages.charts.peity'); });
+        Route::get('sparkline', function () { return view('pages.charts.sparkline'); });
+    });
+
 
 
     Route::get('/', function () {
