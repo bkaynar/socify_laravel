@@ -88,6 +88,7 @@ class EtkinlikController extends Controller
             }
         }
 
+
         return response()->json($gelecektekiEtkinlikler);
 
     }

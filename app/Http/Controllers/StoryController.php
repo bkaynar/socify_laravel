@@ -23,7 +23,7 @@ class StoryController extends Controller
             $image = $request->file('ana_foto');
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $path = public_path('images/story/' . $filename);
-            Image::make($image->getRealPath())->resize(540, 960)->save($path);
+            Image::make($image->getRealPath())->resize(600, 600)->save($path);
 
         }
         $story->ana_foto = 'images/story/' . $filename;

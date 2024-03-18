@@ -1,0 +1,20 @@
+[2024-03-18 17:54:12] local.ERROR: There are no commands defined in the "swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"swagger\" namespace. at /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php:624)
+[stacktrace]
+#0 /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php(675): Symfony\\Component\\Console\\Application->findNamespace('swagger')
+#1 /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find('swagger:generat...')
+#2 /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/burakkaynar/Desktop/project/socify/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/burakkaynar/Desktop/project/socify/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/burakkaynar/Desktop/project/socify/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2024-03-18 17:54:20] local.ERROR: There are no commands defined in the "swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"swagger\" namespace. at /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php:624)
+[stacktrace]
+#0 /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php(675): Symfony\\Component\\Console\\Application->findNamespace('swagger')
+#1 /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find('swagger:generat...')
+#2 /Users/burakkaynar/Desktop/project/socify/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/burakkaynar/Desktop/project/socify/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/burakkaynar/Desktop/project/socify/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/burakkaynar/Desktop/project/socify/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
