@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="12-02-2024">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="18-03-2024" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -286,7 +284,7 @@
       <workItem from="1710695008889" duration="4000" />
       <workItem from="1710749337182" duration="746000" />
       <workItem from="1710773630708" duration="57000" />
-      <workItem from="1710775230923" duration="622000" />
+      <workItem from="1710775230923" duration="673000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme eklendi">
       <option name="closed" value="true" />
@@ -360,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710775795124</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="18-03-2024">
+      <option name="closed" value="true" />
+      <created>1710775868562</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710775868562</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +392,7 @@
     <MESSAGE value="yemek tablosu eklendi" />
     <MESSAGE value="yemek düzenlendi" />
     <MESSAGE value="12-02-2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="12-02-2024" />
+    <MESSAGE value="18-03-2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="18-03-2024" />
   </component>
 </project>
