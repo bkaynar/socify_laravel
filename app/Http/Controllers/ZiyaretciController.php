@@ -31,4 +31,14 @@ class ZiyaretciController extends Controller
         // Ziyaretçi sayısını döndür
         return response()->json(['ziyaret_sayisi' => $ziyaretciKaydi->visitor_count]);
     }
+    public function getir(){
+        //visitor_count,created_at,updated_at verilerini getir
+        $ziyaretciKaydi = ZiyaretciModel::orderBy('id', 'DESC')->get(['visitor_count','created_at','updated_at']);
+        //updated_at ve created_at verilerini tarih formatına çevir
+        foreach ($ziyaretciKaydi as $ziyaretci){
+            //updated_at tarih ve saat olarak alınacak
+            $ziyaretci->updated_at = Carbon::parse($ziyaretci->updated_at)->format('d.m.Y H:i:s');
+        }
+        return view('pages.ziyaretci.ziyaretciler', compact('ziyaretciKaydi'));
+    }
 }

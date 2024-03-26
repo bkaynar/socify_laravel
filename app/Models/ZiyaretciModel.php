@@ -11,7 +11,12 @@ class ZiyaretciModel extends Model
 
     protected $table = 'ziyaretci';
 
+    protected $primaryKey = 'id';
     protected $fillable = [
-        'visitor_count'
+        'visitor_count','updated_at'
     ];
+    protected $hidden = [
+        'created_at'
+    ];
+
 }

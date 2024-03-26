@@ -38,6 +38,22 @@
                     </ul>
                 </div>
             </li>
+            <li class="nav-item {{ active_class(['ziyaretci/*']) }}">
+                <a class="nav-link" data-bs-toggle="collapse" href="#ziyaretci" role="button"
+                   aria-expanded="{{ is_active_route(['ziyaretci/*']) }}" aria-controls="email">
+                    <i class="link-icon" data-feather="coffee"></i>
+                    <span class="link-title">Ziyaretler</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse {{ show_class(['ziyaretci/*']) }}" id="ziyaretci">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ url('/ziyaretciler') }}"
+                               class="nav-link {{ active_class(['ziyaretciler']) }}">Ziyaretçiler</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="nav-item {{ active_class(['yurtyemek/*']) }}">
                 <a class="nav-link" data-bs-toggle="collapse" href="#yurtyemek" role="button"
                    aria-expanded="{{ is_active_route(['yurtyemek/*']) }}" aria-controls="email">

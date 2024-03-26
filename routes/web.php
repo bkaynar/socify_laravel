@@ -26,6 +26,7 @@ use App\Http\Controllers\ToplulukController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\YemekController;
 use App\Http\Controllers\YurtYemekController;
+use App\Http\Controllers\ZiyaretciController;
 use Illuminate\Support\Facades\Auth;
 
 //users tablosuna kayıt ekleme
@@ -176,6 +177,9 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('yurt-yemek-ekle', function () {
         return view('pages.yurtyemek.yurtyemekekle');
     });
+    Route::get('ziyaretciler', [ZiyaretciController::class, 'getir'])->name('ziyaretciler');
+
+
 
 
 //Ekleme İşlemleri
