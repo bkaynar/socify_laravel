@@ -24,7 +24,6 @@ class StoryController extends Controller
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $path = public_path('images/story/' . $filename);
             Image::make($image->getRealPath())->resize(600, 600)->save($path);
-
         }
         $story->ana_foto = 'images/story/' . $filename;
         if ($request->hasFile('fotograf')) {

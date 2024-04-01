@@ -3,8 +3,8 @@
 @section('content')
     <nav class="page-breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Taksi</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Taksi Ekle</li>
+            <li class="breadcrumb-item"><a href="#">Storyler</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Story Ekle</li>
         </ol>
     </nav>
     <div class="row">
@@ -12,7 +12,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h6 class="card-title">Taksiler</h6>
+                    <h6 class="card-title">Storyler</h6>
 
                     <form data-action="{{route('story-ekle')}}" enctype="multipart/form-data" class="forms-sample"
                           id="storyEkle" method="POST">
@@ -29,6 +29,7 @@
                                 <input type="file" name="ana_foto" class="form-control">
                             </div>
                         </div>
+
                         <div class="row mb-3">
                             <label for="Fotoğraf" class="col-sm-3 col-form-label">Fotoğraf</label>
                             <div class="col-sm-9">

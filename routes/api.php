@@ -64,3 +64,7 @@ Route::get('/yurt-bugun-aksam-yemek', 'YurtYemekController@bugunaksam')->middlew
 Route::get('/yurt-aksam-yemek', 'YurtYemekController@aksamlistele')->middleware('CheckSecretKey');
 
 Route::get('/gunluk-ziyaretci-sayisi', 'ZiyaretciController@index')->middleware('CheckSecretKey');
+
+Route::post('/sikayet-gonder', 'SikayetController@createSikayet')->middleware('CheckSecretKey');
+
+Route::get('/sikayet-listele', 'SikayetController@listele')->middleware('CheckSecretKey');
