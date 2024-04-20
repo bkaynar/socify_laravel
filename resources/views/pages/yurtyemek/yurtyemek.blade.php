@@ -42,7 +42,8 @@
                                     <td>{{$yemek->dorduncu}}</td>
                                     <td>{{$yemek->digeryiyecekler}}</td>
                                     <td>
-                                        @if($yemek->sabahaksam == 0)
+                                        @if($yemek->sabah_aksam == 0)
+
                                             Kahvaltı
                                         @else
                                             Akşam

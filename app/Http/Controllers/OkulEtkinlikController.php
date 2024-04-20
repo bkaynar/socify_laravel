@@ -10,13 +10,10 @@ class OkulEtkinlikController extends Controller
 {
     //etkinlikler fonksiyonu ile çalışıyoruz
 
-    public function okuletkinlik()
+    public function goruntule()
     {
-        //baslik, baslangic_tarihi, saati, link, resim verilerini getir ve günü geçmiş olanları gösterme
-        $etkinlikler = OkulEtkinlik::select('baslik', 'baslangic_tarihi', 'saati', 'link', 'resim')
-            ->where('baslangic_tarihi', '>=', date('Y-m-d'))
-            ->orderBy('baslangic_tarihi', 'asc')
-            ->get();
+        $etkinlikler=OkulEtkinlik::orderBy('baslangic_tarihi','desc')->where('silindi',0)->get();
+        //JSON formatında verileri döndür
         return response()->json($etkinlikler);
     }
 }

@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="18-03-2024">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SikayetController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/SikayetModel.php" afterDir="false" />
+    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="şikayet eklendi">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HaberlerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/HaberlerModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/OkulEtkilikModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2024_04_20_173505_create_okuletkinlik_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2024_04_20_215429_create_haberler_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/KMfKkxwVzpre0HwzPSbdJxS1UtTy5U4PUEMr8kjp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/cLqUtSiqxIArut10JmXkBd4vwu5zMIZED7onSL3z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/16b5ddf6ab88c35bedcf5c2a3cfc803cfebe7cdc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/7ca6557d14d917b8d9aaab2a2fcaebbb0a40f1fb.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5aefb6f-6b8b-4f10-a7c2-cd3b7e0818ae.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f5aefb6f-6b8b-4f10-a7c2-cd3b7e0818ae.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_21_204555_create_sikayetler_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_03_21_204555_create_sikayetler_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_28_142920_create_sikayet_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/story/story-ekle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/story/story-ekle.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OkulEtkinlikController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OkulEtkinlikController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_21_204555_create_sikayetler_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemek.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemek.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,6 +322,14 @@
       <workItem from="1711648036079" duration="89000" />
       <workItem from="1711711387541" duration="114000" />
       <workItem from="1711711516334" duration="2334000" />
+      <workItem from="1711980177286" duration="114000" />
+      <workItem from="1711980302600" duration="688000" />
+      <workItem from="1711989542072" duration="599000" />
+      <workItem from="1711999730521" duration="15000" />
+      <workItem from="1712258924600" duration="5000" />
+      <workItem from="1713623535953" duration="3546000" />
+      <workItem from="1713635029164" duration="120000" />
+      <workItem from="1713636942091" duration="2227000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme eklendi">
       <option name="closed" value="true" />
@@ -397,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710775868562</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="şikayet eklendi">
+      <option name="closed" value="true" />
+      <created>1711980204922</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980204922</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +446,7 @@
     <MESSAGE value="yemek düzenlendi" />
     <MESSAGE value="12-02-2024" />
     <MESSAGE value="18-03-2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="18-03-2024" />
+    <MESSAGE value="şikayet eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="şikayet eklendi" />
   </component>
 </project>

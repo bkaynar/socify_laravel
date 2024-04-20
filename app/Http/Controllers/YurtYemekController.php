@@ -11,7 +11,7 @@ class YurtYemekController extends Controller
     public function index()
     {
         //verilerin order by ile sıralanmasını ve 'silindi' bölümünün 0 olmasını ve tarihi geçenleri görmek istemiyoruz
-        $yurtyemekler = YurtYemekModel::orderBy('id', 'ASC')->where('silindi_mi', 0)->where('tarih', '>=', date('Y-m-d'))->get();
+        $yurtyemekler = YurtYemekModel::orderBy('tarih', 'ASC')->where('silindi_mi', 0)->where('tarih', '>=', date('Y-m-d'))->get();
         return view('pages.yurtyemek.yurtyemek', compact('yurtyemekler'));
     }
 
