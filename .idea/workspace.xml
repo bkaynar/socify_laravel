@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="şikayet eklendi">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HaberlerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/HaberlerModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/OkulEtkilikModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2024_04_20_173505_create_okuletkinlik_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2024_04_20_215429_create_haberler_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/KMfKkxwVzpre0HwzPSbdJxS1UtTy5U4PUEMr8kjp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/cLqUtSiqxIArut10JmXkBd4vwu5zMIZED7onSL3z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/16b5ddf6ab88c35bedcf5c2a3cfc803cfebe7cdc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/7ca6557d14d917b8d9aaab2a2fcaebbb0a40f1fb.php" afterDir="false" />
+    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="haberler etkinlikler eklendi">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FirsatlarController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/FirsatlarModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2024_04_22_112141_create_firsatlar_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/firsat/firsatekle.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/firsat/firsatlar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OkulEtkinlikController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OkulEtkinlikController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_03_21_204555_create_sikayetler_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemek.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/yurtyemek/yurtyemek.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
@@ -329,7 +322,10 @@
       <workItem from="1712258924600" duration="5000" />
       <workItem from="1713623535953" duration="3546000" />
       <workItem from="1713635029164" duration="120000" />
-      <workItem from="1713636942091" duration="2227000" />
+      <workItem from="1713636942091" duration="2300000" />
+      <workItem from="1713658826892" duration="1660000" />
+      <workItem from="1713774021519" duration="415000" />
+      <workItem from="1713774443901" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme eklendi">
       <option name="closed" value="true" />
@@ -419,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711980204922</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="haberler etkinlikler eklendi">
+      <option name="closed" value="true" />
+      <created>1713641125238</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713641125238</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,6 +451,7 @@
     <MESSAGE value="12-02-2024" />
     <MESSAGE value="18-03-2024" />
     <MESSAGE value="şikayet eklendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="şikayet eklendi" />
+    <MESSAGE value="haberler etkinlikler eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="haberler etkinlikler eklendi" />
   </component>
 </project>

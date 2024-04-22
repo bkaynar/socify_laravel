@@ -115,21 +115,21 @@
                     </ul>
                 </div>
             </li>
-            <li class="nav-item {{ active_class(['topluluk/*']) }}">
-                <a class="nav-link" data-bs-toggle="collapse" href="#topluluk" role="topluluk"
-                   aria-expanded="{{ is_active_route(['topluluk/*']) }}" aria-controls="email">
+            <li class="nav-item {{ active_class(['firsat/*']) }}">
+                <a class="nav-link" data-bs-toggle="collapse" href="#firsat" role="firsat"
+                   aria-expanded="{{ is_active_route(['firsat/*']) }}" aria-controls="email">
                     <i class="link-icon" data-feather="user"></i>
-                    <span class="link-title">Topluluklar</span>
+                    <span class="link-title">Fırsatlar</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse {{ show_class(['topluluk/*']) }}" id="topluluk">
+                <div class="collapse {{ show_class(['firsat/*']) }}" id="firsat">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="{{ url('/topluluklar') }}"
-                               class="nav-link {{ active_class(['topluluklar']) }}">Topluluklar</a>
+                            <a href="{{ url('/firsatlar') }}"
+                               class="nav-link {{ active_class(['firsatlar']) }}">Fırsatlar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/toplulukekle') }}" class="nav-link {{ active_class(['toplulukekle']) }}">Topluluk
+                            <a href="{{ url('/firsatekle') }}" class="nav-link {{ active_class(['firsatekle']) }}">Fırsat
                                 Ekle</a>
                         </li>
                     </ul>

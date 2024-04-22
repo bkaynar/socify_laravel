@@ -16,6 +16,7 @@ use App\Http\Controllers\BirimController;
 use App\Http\Controllers\DuyuruController;
 use App\Http\Controllers\EkipController;
 use App\Http\Controllers\EtkinlikController;
+use App\Http\Controllers\FirsatlarController;
 use App\Http\Controllers\GuncellemeController;
 use App\Http\Controllers\KaliteBildirimController;
 use App\Http\Controllers\KaliteGondericiController;
@@ -136,9 +137,9 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('duyuruekle', [DuyuruController::class, 'birimler'])->name('duyuruekle');
 
 //Topluluklar
-    Route::get('topluluklar', [ToplulukController::class, 'index'])->name('topluluklar');
-    Route::get('toplulukekle', function () {
-        return view('pages.topluluk.toplulukekle');
+    Route::get('firsatlar', [FirsatlarController::class, 'index'])->name('firsatlar');
+    Route::get('firsatekle', function () {
+        return view('pages.firsat.firsatekle');
     });
 //Etkinlikler
     Route::get('etkinlikler', [EtkinlikController::class, 'index'])->name('etkinlikler');
@@ -188,7 +189,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::post('birim-ekle', [BirimController::class, 'store'])->name('birim-ekle');
     Route::post('duyuru-ekle', [DuyuruController::class, 'store'])->name('duyuru-ekle');
     Route::post('topluluk-ekle', [ToplulukController::class, 'store'])->name('topluluk-ekle');
-    Route::post('etkinlik-ekle', [EtkinlikController::class, 'store'])->name('etkinlik-ekle');
+    Route::post('firsat-ekle', [FirsatlarController::class, 'store'])->name('firsat-ekle');
     Route::post('kalitebildirim-ekle', [KaliteBildirimController::class, 'store'])->name('kalitebildirim-ekle');
     Route::post('kalitegonderici-ekle', [KaliteGondericiController::class, 'store'])->name('kalitegonderici-ekle');
     Route::post('kullanici-ekle', [UserController::class, 'store'])->name('kullanici-ekle');
@@ -205,7 +206,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::put('birim-delete/{id}', [BirimController::class, 'destroy'])->name('birim-delete');
     Route::put('duyuru-delete/{id}', [DuyuruController::class, 'destroy'])->name('duyuru-delete');
     Route::put('topluluk-delete/{id}', [ToplulukController::class, 'destroy'])->name('topluluk-delete');
-    Route::put('etkinlik-delete/{id}', [ToplulukController::class, 'destroy'])->name('etkinlik-delete');
+    Route::put('firsat-delete/{id}', [FirsatlarController::class, 'destroy'])->name('firsat-delete');
     Route::put('kalitebildirim-delete/{id}', [KaliteBildirimController::class, 'destroy'])->name('kalitebildirim-delete');
     Route::put('kullanici-delete/{id}', [UserController::class, 'destroy'])->name('kullanici-delete');
     Route::put('ekip-delete/{id}', [EkipController::class, 'destroy'])->name('ekip-delete');
@@ -220,6 +221,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::put('taksi-oncelik/{id}', [TaksiController::class, 'oncelikver'])->name('taksi-oncelik');
     Route::put('story-aktif/{id}', [StoryController::class, 'aktiflik'])->name('story-aktif');
     Route::put('story-oncelik/{id}', [StoryController::class, 'oncelikver'])->name('story-oncelik');
+    Route::put('firsat-oncelik/{id}', [FirsatlarController::class, 'oncelikVer'])->name('firsat-oncelik');
 
     Route::group(['prefix' => 'error'], function () {
         Route::get('404', function () {
