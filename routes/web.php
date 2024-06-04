@@ -18,6 +18,7 @@ use App\Http\Controllers\EkipController;
 use App\Http\Controllers\EtkinlikController;
 use App\Http\Controllers\FirsatlarController;
 use App\Http\Controllers\GuncellemeController;
+use App\Http\Controllers\HaberlerController;
 use App\Http\Controllers\KaliteBildirimController;
 use App\Http\Controllers\KaliteGondericiController;
 use App\Http\Controllers\OtobusSaatleriController;
@@ -142,8 +143,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         return view('pages.firsat.firsatekle');
     });
 //Etkinlikler
-    Route::get('etkinlikler', [EtkinlikController::class, 'index'])->name('etkinlikler');
-    Route::get('etkinlikekle', [EtkinlikController::class, 'topluluklar'])->name('etkinlikekle');
+    Route::get('haberler', [HaberlerController::class, 'listele'])->name('haberler');
 
 //KaliteBildirim
     Route::get('kalitebildirim', [KaliteBildirimController::class, 'index'])->name('kalitebildirim');
@@ -180,7 +180,9 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     });
     Route::get('ziyaretciler', [ZiyaretciController::class, 'getir'])->name('ziyaretciler');
 
-
+    Route::get('ekranlar', function () {
+        return view('pages.ui-components.cards');
+    });
 
 
 //Ekleme İşlemleri
@@ -214,6 +216,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::put('taksi-delete/{id}', [TaksiController::class, 'destroy'])->name('taksi-delete');
     Route::put('story-delete/{id}', [StoryController::class, 'destroy'])->name('story-delete');
     Route::put('yurt-yemek-delete/{id}', [YurtYemekController::class, 'destroy'])->name('yurt-yemek-delete');
+    Route::put('haber-delete/{id}', [HaberlerController::class, 'destroy'])->name('haber-delete');
 
 
 //Düzenleme İşlemleri

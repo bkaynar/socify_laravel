@@ -72,3 +72,7 @@ Route::get('/sikayet-listele', 'SikayetController@listele')->middleware('CheckSe
 Route::get('okul-etkinlik', 'OkulEtkinlikController@goruntule')->middleware('CheckSecretKey');
 
 Route::get('/haberler', 'HaberlerController@index')->middleware('CheckSecretKey');
+
+Route::get('/firsatlar', 'FirsatlarController@listele')->middleware('CheckSecretKey');
+
+Route::post('yurt-yemek-ekle', 'YurtYemekController@apiEkle')->middleware('CheckSecretKey');

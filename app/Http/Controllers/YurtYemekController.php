@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\YurtYemekModel;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class YurtYemekController extends Controller
 {
@@ -76,4 +77,28 @@ class YurtYemekController extends Controller
         return response()->json($yurtyemekler);
     }
 
+    public function apiEkle(Request $request)
+    {
+
+        $data = $request->all();
+
+        foreach ($data as $meal) {
+            $validatedData = Validator::make($meal, [
+                'corba' => 'required|string',
+                'ikinci' => 'required|string',
+                'ikincialternatif' => 'required|string',
+                'ucuncu' => 'required|string',
+                'dorduncu' => 'required|string',
+                'tarih' => 'required|date',
+                'sabah_aksam' => 'required|integer'
+            ])->validate();
+
+            YurtYemekModel::create($validatedData);
+        }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Meals added successfully!'
+        ]);
+        }
 }

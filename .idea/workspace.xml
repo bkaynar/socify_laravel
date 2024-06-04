@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="haberler etkinlikler eklendi">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FirsatlarController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/FirsatlarModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2024_04_22_112141_create_firsatlar_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/firsat/firsatekle.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/firsat/firsatlar.blade.php" afterDir="false" />
+    <list default="true" id="bb3a03f0-0604-46da-94ad-705c5b256693" name="Changes" comment="firsatlar eklendi">
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/haber/haberler.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/NEmzVBC6vKsKKagODRffrrm4LsyR6wzGHzSR3sD7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuncellemeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HaberlerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HaberlerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/YurtYemekController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/GuncellemeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/GuncellemeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +220,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;web.server&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.deploy.options&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
     &quot;two.files.diff.last.used.folder&quot;: &quot;/Users/burakkaynar/Herd/socify&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -325,7 +325,22 @@
       <workItem from="1713636942091" duration="2300000" />
       <workItem from="1713658826892" duration="1660000" />
       <workItem from="1713774021519" duration="415000" />
-      <workItem from="1713774443901" duration="2057000" />
+      <workItem from="1713774443901" duration="3062000" />
+      <workItem from="1713781125422" duration="1191000" />
+      <workItem from="1713784908536" duration="36000" />
+      <workItem from="1713788101932" duration="1343000" />
+      <workItem from="1713870251621" duration="667000" />
+      <workItem from="1714765294227" duration="599000" />
+      <workItem from="1714774974353" duration="19000" />
+      <workItem from="1714775009847" duration="1000" />
+      <workItem from="1715517705926" duration="1069000" />
+      <workItem from="1715711341885" duration="651000" />
+      <workItem from="1715851241562" duration="10000" />
+      <workItem from="1715860113760" duration="1679000" />
+      <workItem from="1716156335243" duration="900000" />
+      <workItem from="1717057916313" duration="139000" />
+      <workItem from="1717058066172" duration="2993000" />
+      <workItem from="1717069494193" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme eklendi">
       <option name="closed" value="true" />
@@ -423,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713641125238</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="firsatlar eklendi">
+      <option name="closed" value="true" />
+      <created>1713776529840</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713776529840</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,6 +475,7 @@
     <MESSAGE value="18-03-2024" />
     <MESSAGE value="şikayet eklendi" />
     <MESSAGE value="haberler etkinlikler eklendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="haberler etkinlikler eklendi" />
+    <MESSAGE value="firsatlar eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="firsatlar eklendi" />
   </component>
 </project>

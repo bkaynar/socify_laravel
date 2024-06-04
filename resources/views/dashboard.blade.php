@@ -1,37 +1,52 @@
 @extends('layout.master')
 
 @push('plugin-styles')
-  <link href="{{ asset('assets/plugins/flatpickr/flatpickr.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/plugins/flatpickr/flatpickr.min.css') }}" rel="stylesheet"/>
 @endpush
 
 @section('content')
-<div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-  <div>
-    <h4 class="mb-3 mb-md-0">Welcome to Dashboard</h4>
-  </div>
-  <div class="d-flex align-items-center flex-wrap text-nowrap">
-    <div class="input-group flatpickr wd-200 me-2 mb-2 mb-md-0" id="dashboardDate">
-      <span class="input-group-text input-group-addon bg-transparent border-primary" data-toggle><i data-feather="calendar" class="text-primary"></i></span>
-      <input type="text" class="form-control bg-transparent border-primary" placeholder="Select date" data-input>
+    <div class="d-flex">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ziyaretçiler</h5>
+                    <a href="{{route('ziyaretciler')}}" class="btn btn-primary">Ziyaretçi Listesi</a>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Taksi Listesi</h5>
+                    <a href="{{route('taksi')}}" class="btn btn-primary">Taksi Listesi</a>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Taksi Ekle</h5>
+                    <a href="{{route('taksi-ekle')}}" class="btn btn-primary">Taksi Ekle</a>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Fırsat Ekle</h5>
+                    <a href="/firsatekle" class="btn btn-primary">Fırsat Ekle</a>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Fırsat Listesi</h5>
+                    <a href="/firsatlar" class="btn btn-primary">Fırsat Listesi</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <button type="button" class="btn btn-outline-primary btn-icon-text me-2 mb-2 mb-md-0">
-      <i class="btn-icon-prepend" data-feather="printer"></i>
-      Print
-    </button>
-    <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
-      <i class="btn-icon-prepend" data-feather="download-cloud"></i>
-      Download Report
-    </button>
-  </div>
-</div>
 
 @endsection
 
 @push('plugin-scripts')
-  <script src="{{ asset('assets/plugins/flatpickr/flatpickr.min.js') }}"></script>
-  <script src="{{ asset('assets/plugins/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/flatpickr/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/apexcharts/apexcharts.min.js') }}"></script>
 @endpush
 
 @push('custom-scripts')
-  <script src="{{ asset('assets/js/dashboard.js') }}"></script>
+    <script src="{{ asset('assets/js/dashboard.js') }}"></script>
 @endpush

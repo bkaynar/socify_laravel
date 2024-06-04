@@ -16,9 +16,12 @@ class GuncellemeModel extends Model
         'android_check',
         'ios_check',
         'playstore_link',
-        'appstore_link',
+        'appstore_link'
+    ];
+    protected $hidden = [
         'silindi',
         'created_at',
-        'updated_at',
+        'updated_at'
+
     ];
 }
