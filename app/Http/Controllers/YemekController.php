@@ -42,7 +42,7 @@ class YemekController extends Controller
     public function listele()
     {
         //verileri silindi 0 olanları çekiyoruz, tarih bugün ve bugünden sonraki tarihler olacak şekilde çekiyoruz sadece yemek1,yemek2,yemek3,yemek4 ve tarih verilerini çekiyoruz
-        $yemekler = Yemek::orderBy('tarih', 'ASC')->where('silindi', 0)->where('tarih', '>=', date('Y-m-d'))->get(['yemek1', 'yemek2', 'yemek3', 'yemek4', 'tarih']);
+        $yemekler = Yemek::orderBy('tarih', 'ASC')->where('silindi', 0)->where('tarih', '>=', date('Y-m-d'))->get();
         //api.php deki route ile çalışıyoruz
         //Eğer veri yok ise boş döndürüyoruz
         return response()->json($yemekler);
