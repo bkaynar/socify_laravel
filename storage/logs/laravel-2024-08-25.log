@@ -1,0 +1,16 @@
+[2024-08-25 12:49:15] local.ERROR: Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) at /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:4)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-25 12:50:15] local.ERROR: Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) at /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:4)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-25 12:51:15] local.ERROR: Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) at /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:4)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-25 12:52:15] local.ERROR: Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare active_class() (previously declared in /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:3) at /Users/burakkaynar/Documents/GitHub/socify/app/helpers.php:4)
+[stacktrace]
+#0 {main}
+"} 
